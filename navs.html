@@ -3,22 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <title>多级菜单</title>
+    <style>
+        *{margin:0;padding:0;}
+        div{ margin: 0 auto; width: 500px;
+            color:#fff; font-weight: bold;
+            background: skyblue;border-radius: 6px;  }
+        div>ul{padding:30px 0 30px 0;}
+        li>ul{display: none}
+        .navs p{cursor: pointer;}
+        li em{padding-left:-20px; width: 20px;height: 20px;text-align: center;line-height: 20px;
+            display: inline-block; background: sienna; border-radius: 100%; margin-right: 10px;
+        font-style:normal;
+        }
+        li{list-style: none; line-height: 24px;padding-left: 50px;  }
+    </style>
 </head>
 <body>
-<div>
+<div class="navs">
     <ul>
         <li>
             <p><em></em>层级1</p>
             <ul>
                 <li>
-                    <p><em></em></p>
+                    <p><em></em>层级2</p>
+                    <ul>
+                        <li>
+                            <p><em></em>层级3</p>
+                            <ul>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                            </ul>
+                        </li>
+                        <li>层级3</li>
+                        <li>
+                            <p><em></em>层级4</p>
+                            <ul>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
                 <li>层级2</li>
             </ul>
         </li>
-        <li></li>
+        <li>层级1</li>
+    </ul>
+    <ul>
+        <li>
+            <p><em></em>层级1</p>
+            <ul>
+                <li>
+                    <p><em></em>层级2</p>
+                    <ul>
+                        <li>
+                            <p><em></em>层级3</p>
+                            <ul>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                            </ul>
+                        </li>
+                        <li>层级3</li>
+                        <li>
+                            <p><em></em>层级4</p>
+                            <ul>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>层级2</li>
+            </ul>
+        </li>
+        <li>层级1</li>
+    </ul>
+    <ul>
+        <li>
+            <p><em></em>层级1</p>
+            <ul>
+                <li>
+                    <p><em></em>层级2</p>
+                    <ul>
+                        <li>
+                            <p><em></em>层级3</p>
+                            <ul>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                            </ul>
+                        </li>
+                        <li>层级3</li>
+                        <li>
+                            <p><em></em>层级4</p>
+                            <ul>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                                <li>层级4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>层级2</li>
+            </ul>
+        </li>
+        <li>层级1</li>
     </ul>
 </div>
-
+<script src="../jquery.3.0.0.min.js"></script>
+<script src="navs.js"></script>
 </body>
 </html>
